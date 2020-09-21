@@ -1,0 +1,93 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  background-image: url("imagens/fundo.png");
+}
+body #body-items {
+  width: 70%;
+  height: 100%;
+}
+@media (max-width: 800px) {
+  body #body-items {
+    width: 100vw;
+    height: 100vh;
+  }
+}
+
+/* TOPO DO SITE */
+
+body #body-items header img {
+  width: 100%;
+}
+body #body-items header nav {
+  width: 100%;
+  background-color: rgb(214, 214, 191);
+  height: 10vh;
+  display: flex;
+  align-items: center;
+}
+body #body-items header nav a {
+  color: rgb(81, 91, 108);
+  border-right: 1px solid black;
+  padding: 0vh 3vh;
+  font-weight: 900;
+  text-decoration: none;
+}
+@media (max-width: 800px) {
+  body #body-items header nav {
+    justify-content: center;
+    flex-direction: column;
+    height: 20vh;
+    width: 100vw;
+  }
+  body #body-items header nav a {
+    font-size: 0.9rem;
+    padding: 0vh 1vh;
+    border-right: none;
+    border-bottom: 1px solid black;
+    padding: 1vh;
+  }
+  body #body-items header nav a:last-child {
+    border-bottom: none;
+  }
+}
+body #body-items header nav a:last-child {
+  border-right: none;
+}
+
+/* CORPO DO SITE */
+body #body-items section {
+  background-color: rgb(251, 250, 233);
+  width: 100%;
+}
+
+body #body-items section div {
+  width: 100%;
+  padding: 0vh 2.5vh;
+}
+body #body-items section div h5 {
+  color: rgb(127, 133, 119);
+  padding: 3vh 0vh;
+  font-size: 1.2rem;
+}
+
+body #body-items section div p {
+  padding-bottom: 3vh;
+}
+@media (max-width: 800px) {
+  body #body-items section div p {
+    font-size: 1.5rem;
+  }
+  body #body-items section div h5 {
+    text-align: center;
+  }
+}
+body #body-items #copyright {
+  font-weight: 900;
+  padding: 3vh 0vh;
+  text-align: center;
+  font-size: 1.1rem;
+}
